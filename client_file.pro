@@ -8,7 +8,6 @@ SOURCES += WindowManager.cpp \
     UserWidgets.cpp \
     UserModels.cpp \
     UserDelegates.cpp \
-    SettingsDialog.cpp \
     PlanDialog.cpp \
     Message_Handler.cpp \
     MainData.cpp \
@@ -16,11 +15,11 @@ SOURCES += WindowManager.cpp \
     LoginDialog.cpp \
     ListDialog.cpp \
     Addlecturer.cpp \
-    AddDialog.cpp
+    AddDialog.cpp \
+    settingdlg.cpp
 HEADERS += UserWidgets.h \
     UserModels.h \
     UserDelegates.h \
-    SettingsDialog.h \
     PlanDialog.h \
     MessageHandler.h \
     MainData.h \
@@ -28,5 +27,7 @@ HEADERS += UserWidgets.h \
     ListDialog.h \
     AddLecturer.h \
     AddDialog.h \
-    WindowManager.h
-FORMS += 
+    WindowManager.h \
+    settingdlg.h
+FORMS += \ 
+    settingdlg.ui

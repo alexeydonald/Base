@@ -6,11 +6,11 @@
 # include "LoginDialog.h"
 # include "MainData.h"
 # include "ListDialog.h"
-# include "SettingsDialog.h"
 # include "AddDialog.h"
 # include "MessageHandler.h"
 # include "AddLecturer.h"
 # include "PlanDialog.h"
+#include "settingdlg.h"
 
 
 class WindowManager:public QWidget
@@ -24,7 +24,7 @@ class WindowManager:public QWidget
     LoginDialog* getLoginPtr() { return login_ptr; }
     ListDialog* getListPtr() { return list_ptr; }
     PlanDialog* getPlanPtr() { return plan_ptr; }
-    SettingsDialog* getSettingsPtr() {return settings_ptr; }
+    SettingDlg* getSettingsPtr() {return settings_ptr; }
 
 
  private:
@@ -40,7 +40,7 @@ class WindowManager:public QWidget
     LoginDialog* login_ptr;
     ListDialog* list_ptr;
     PlanDialog* plan_ptr;
-    SettingsDialog* settings_ptr;
+    SettingDlg* settings_ptr;
     AddDialog* add_ptr;
     AddLecturer* lecturer_ptr;
 

@@ -45,7 +45,7 @@ void WindowManager::onLogin(int ret)
         MainData::Instance()->saveData();
         break;
     case LoginDialog::SETTINGS:
-        settings_ptr=new SettingsDialog(login_ptr);
+        settings_ptr=new SettingDlg(login_ptr);
         settings_ptr->show();
         break;
     default:
