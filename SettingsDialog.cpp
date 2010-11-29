@@ -15,6 +15,9 @@ SettingsDialog::SettingsDialog(QWidget* parent):QDialog(parent,Qt::MSWindowsFixe
     edit_port=new QLineEdit(this);
     edit_dbname=new QLineEdit(this);
 
+
+
+
     settings_data* s_data=MainData::Instance()->getSettingsData();
     edit_address->setText(s_data->hostname);
     edit_port->setText(s_data->port);
@@ -49,6 +52,8 @@ SettingsDialog::SettingsDialog(QWidget* parent):QDialog(parent,Qt::MSWindowsFixe
 
     connect(button_ok,SIGNAL(clicked()),this,SLOT(onOk()));
     connect(button_cancel,SIGNAL(clicked()),this,SLOT(onCancel()));
+    edit_address->setText("localhost");
+    edit_dbname->setText("bd_msius");
 }
 //-----------------------------------------------------------------------
 void SettingsDialog::onOk()

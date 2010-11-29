@@ -3,7 +3,7 @@
 # include "MessageHandler.h"
 # include "WindowManager.h"
 # include <QtSql>
-Q_IMPORT_PLUGIN(qsqlmysql);
+
 
 
 
