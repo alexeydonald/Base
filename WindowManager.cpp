@@ -26,7 +26,7 @@ void WindowManager::onLogin(int ret)
   switch (ret)
   {
     case LoginDialog::OK:
-
+      {
 
         bool ok=MainData::Instance()->createDBConnection();
         bool usr=MainData::Instance()->checkUser();
@@ -39,6 +39,7 @@ void WindowManager::onLogin(int ret)
         }
         if(!usr)
             MainData::Instance()->closeDBConnection();
+    }
         break;
     case LoginDialog::CANCEL:
         MainData::Instance()->saveData();
